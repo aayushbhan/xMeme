@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Meme</title>
+    <link rel="stylesheet" href="../static/css/form.css" th:href="@{/css/form.css}">
+</head>
+<body>
+<div class="header">
+    <h1>Meme Submit Form</h1>
+</div><br><br>
+<div class="container">
+
+    <div class="form-style-5">
+        <form action="#" th:action="@{/save}" th:object="${meme}" method="POST">
+            <fieldset>
+                <input type="text" th:field="*{name}" placeholder="Meme Creator Name" required> <br><br>
+
+                <input type="text" th:field="*{caption}" placeholder="Caption Of Meme" required> <br><br>
+
+                <input type="text" th:field="*{url}" placeholder="URL Of Meme" required> <br><br>
+            </fieldset>
+
+            <button type="submit"> Save Meme</button><br><br>
+
+        </form>
+        <button><a th:href="@{/home}" style="color:#FFFFFF; text-decoration:none"> Back to Meme List</a></button>
+
+
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Meme</title>
+    <link rel="stylesheet" href="../static/css/form.css" th:href="@{/css/form.css}">
+</head>
+<body>
+<div class="header">
+    <h1>Meme Update Form</h1>
+</div><br><br>
+    <div class="form-style-5">
+
+        <form action="#" th:action="@{/updateMeme}" th:object="${meme}" method="POST">
+            <fieldset>
+                <input type="hidden" th:field="*{id}" placeholder="Meme Id" required><br><br>
+
+                <input type="text" th:field="*{caption}" placeholder="New Caption" required><br><br>
+
+                <input type="text" th:field="*{url}" placeholder="New URL" required><br><br>
+            </fieldset>
+
+                <button type="update"> Update Meme</button><br><br>
+        </form>
+
+
+        <button><a th:href="@{/home}" style="color:#FFFFFF; text-decoration:none"> Back to Meme List</a></button>
+</div>
+</body>
+</html>

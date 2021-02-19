@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>XMEME Home</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../static/css/memeList.css" th:href="@{/css/memeList.css}">
+
+</head>
+<body>
+<div class="header">
+    <h1>Welcome to XMEME!</h1>
+</div><br><br>
+<button class="submit_meme"><a th:href="@{/create}" style="color:#FFFFFF; text-decoration:none ">Submit A New Meme</a></button>
+
+    <div class="meme-list">
+        <div th:each="meme : ${listOfMemes}" >
+            <b>Name</b> <p th:text="${meme.name}"> Name</p>
+            <b>Caption</b><p th:text="${meme.caption}"> Caption</p>
+            <img th:attr="src=${meme.url}",height="538" width="300"/><br>
+            <button class="update"><a th:href="@{/showUpdateForm/{id}(id=${meme.id})}" style="color:#FFFFFF; text-decoration:none ">Update</a></button>
+            <hr>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+crioproject/xmeme/Repository/MemeRepository.class
+crioproject/xmeme/XmemeApplication.class
+crioproject/xmeme/Controller/UiController.class
+crioproject/xmeme/Service/MemeService.class
+crioproject/xmeme/Controller/WebConfig.class
+crioproject/xmeme/Controller/MemesController.class
+crioproject/xmeme/Model/Meme.class
+crioproject/xmeme/Service/memeServiceImplementation.class

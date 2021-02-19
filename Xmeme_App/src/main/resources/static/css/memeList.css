@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.meme-list{
+    max-width: 500px;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    margin: 10px auto;
+    border-radius: 8px;
+
+}
+
+.submit_meme,.update
+{
+
+    position: relative;
+    display: block;
+    padding: 10px 39px 10px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 50%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+
+
+
+.submit_meme:hover,.update:hover
+{
+    background: #109177;
+}
+
+.meme-list img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.meme-list p
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.header {
+    padding: 15px;
+    text-align: left;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+
+}
+
+.header h1{
+    margin: 0;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
